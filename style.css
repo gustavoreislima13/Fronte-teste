@@ -747,70 +747,56 @@ input:-webkit-autofill
 }
 
     /* Cara */
+/* Centralizando o texto */
 
-  /* Estilos para o título da seção */
-  .section-title {
-    color: #333;
-    font-size: 32px;
-    font-weight: bold;
+.section.service {
     text-align: center;
-    margin-bottom: 40px;
   }
   
-  /* Estilos para os itens da lista */
-  .grid-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
+  /* Estilizando o subtítulo da seção */
+  .section-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    
   }
   
-  /* Estilos para os cartões de serviço */
+  /* Estilizando o título da seção */
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+
+  }
+  
+  /* Estilizando os cartões de serviço */
   .service-card {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
   }
   
   .service-card:hover {
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
   }
   
-  /* Estilos para o ícone do cartão */
-  .card-icon {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .card-icon ion-icon {
-    font-size: 36px;
-    color: #333;
-  }
-  
-  /* Estilos para o título do cartão */
+  /* Estilizando o título do cartão */
   .card-title {
-    color: #333;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
   
-  /* Estilos para o texto do cartão */
+  /* Estilizando o texto do cartão */
   .card-text {
+    font-size: 1rem;
     color: #666;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
   }
   
-  /* Estilos para o botão do cartão */
+  /* Estilizando o botão de texto */
   .btn-text {
-    color: #007bff;
     text-decoration: none;
-    display: inline-block;
+    color: #007bff;
+    font-weight: bold;
     transition: color 0.3s ease;
   }
   
@@ -818,10 +804,29 @@ input:-webkit-autofill
     color: #0056b3;
   }
   
-  /* Estilos para o ícone do botão */
+  /* Estilizando o ícone dentro do botão */
   .btn-text ion-icon {
-    font-size: 16px;
-    vertical-align: middle;
-    margin-left: 5px;
+    margin-left: 0.5rem;
+  }
+  
+  /* Estilizando a lista de cartões */
+  .grid-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  /* Estilizando os itens da lista */
+  .grid-list li {
+    flex: 1 1 300px;
+    max-width: 300px;
+  }
+  
+  /* Posicionando o título acima dos cartões */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
